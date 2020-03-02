@@ -21,7 +21,7 @@ public class MultiFK2 {
 //    private Department department;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
+    @JsonBackReference("abc")
     @JoinColumn(name = "dept_idfk1", referencedColumnName = "dept_id")
     private Department department;
 //

@@ -1,5 +1,6 @@
 package com.coderaviverma.spring_jpa_demo;
 
+
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;

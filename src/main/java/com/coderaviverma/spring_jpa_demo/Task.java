@@ -1,5 +1,6 @@
 package com.coderaviverma.spring_jpa_demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class Task {
 
     @OneToOne(fetch = FetchType.LAZY,optional = true)
     @JoinColumn(name = "dept_id")
+    @JsonIgnore
     private Department department;
 
     public Long getTask_id() {
